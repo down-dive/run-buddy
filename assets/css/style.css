@@ -225,3 +225,13 @@ section {
 .text-right {
   text-align: right;
 }
+
+.contact-us {
+  background-color: #024e76;
+  text-align: center;
+}
+
+.third-border {
+  color: #fce138;
+  border-bottom: #39a6b2 solid 2px;
+}

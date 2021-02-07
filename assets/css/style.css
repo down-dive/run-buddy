@@ -18,6 +18,13 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
 }
 
 header h1 {
@@ -96,6 +103,8 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 .hero-cta {
@@ -141,6 +150,11 @@ section {
   width: 100%;
   margin-bottom: 15px; 
   border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75)
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
 }
 
 .hero-form label {
@@ -155,6 +169,10 @@ section {
   font-size: 16px;
   border-radius: 10px;
 } 
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
 /* HERO STYLES END */
 
 
@@ -349,6 +367,11 @@ section {
   border-radius: 10px;
 }
 
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
 .contact-info a {
   color: #fce138;
 }
@@ -374,6 +397,7 @@ section {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative
   }
 
   header h1 {
@@ -389,6 +413,13 @@ section {
 
   header nav ul li a {
     font-size: 20px;
+  }
+
+  header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
   }
 
   footer h2, footer div {

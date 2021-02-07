@@ -155,6 +155,7 @@ section {
 
 .form-input:focus {
   background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .hero-form label {
